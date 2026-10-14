@@ -1,0 +1,13 @@
+flowchart TB
+    Internet((Internet)) --> DNS[Public DNS / Custom Domain]
+    DNS --> M365[Microsoft 365 Tenant]
+    M365 --> Entra[Microsoft Entra ID]
+    M365 --> EXO[Exchange Online]
+    M365 --> SP[SharePoint Online]
+    M365 --> OD[OneDrive]
+    M365 --> Teams[Microsoft Teams]
+    Entra --> MFA[MFA / Conditional Access]
+    Entra --> RBAC[Groups / Least-Privilege Roles]
+    EXO --> EmailSec[SPF / DKIM / DMARC]
+    SP --> Access[Department Access Controls]
+    Teams --> Governance[Owners / Guest Governance]
