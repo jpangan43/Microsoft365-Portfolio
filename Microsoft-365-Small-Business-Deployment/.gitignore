@@ -1,0 +1,25 @@
+# Secrets and local environment files
+.env
+.env.*
+*.pfx
+*.p12
+*.pem
+*.key
+*credentials*
+*password*
+*recovery-code*
+secrets/
+
+# Local exports and logs
+*.log
+*.pst
+*.ost
+*.eml
+*.csv
+*.jsonl
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
